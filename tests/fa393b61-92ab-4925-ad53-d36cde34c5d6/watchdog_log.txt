@@ -1,0 +1,38 @@
+/Qkdyuf/.cache/matplotlib/fontlist-v390.json.matplotlib-lock 
+/Qkdyuf/.cache/matplotlib/fontlist-v390.json.matplotlib-lock 
+/Qkdyuf/.cache/matplotlib/fontlist-v390.json 
+/Qkdyuf/.cache/matplotlib/fontlist-v390.json 
+/Qkdyuf/.cache/matplotlib/fontlist-v390.json 
+/Qkdyuf/.cache/matplotlib/fontlist-v390.json 
+/Qkdyuf/.cache/matplotlib/fontlist-v390.json 
+/Qkdyuf/.cache/matplotlib/fontlist-v390.json 
+/Qkdyuf/.cache/matplotlib/fontlist-v390.json.matplotlib-lock 
+/Qkdyuf/code/263259/HH_project/network_simulations/__pycache__/time_varying_input.cpython-311.pyc 
+/Qkdyuf/code/263259/HH_project/single_cell_models/__pycache__/__init__.cpython-311.pyc 
+/Qkdyuf/code/263259/HH_project/single_cell_models/__pycache__/cell_library.cpython-311.pyc.140609300878880 
+/Qkdyuf/code/263259/HH_project/single_cell_models/__pycache__/cell_library.cpython-311.pyc.140609300878880 
+/Qkdyuf/code/263259/HH_project/single_cell_models/__pycache__/cell_library.cpython-311.pyc.140609300878880 
+/Qkdyuf/code/263259/HH_project/single_cell_models/__pycache__/cell_library.cpython-311.pyc.140609300878880 /Qkdyuf/code/263259/HH_project/single_cell_models/__pycache__/cell_library.cpython-311.pyc
+/Qkdyuf/code/263259/HH_project/single_cell_models/__pycache__/cell_construct.cpython-311.pyc.140609300878880 
+/Qkdyuf/code/263259/HH_project/single_cell_models/__pycache__/cell_construct.cpython-311.pyc.140609300878880 
+/Qkdyuf/code/263259/HH_project/single_cell_models/__pycache__/cell_construct.cpython-311.pyc.140609300878880 
+/Qkdyuf/code/263259/HH_project/single_cell_models/__pycache__/cell_construct.cpython-311.pyc.140609300878880 /Qkdyuf/code/263259/HH_project/single_cell_models/__pycache__/cell_construct.cpython-311.pyc
+/Qkdyuf/code/263259/HH_project/synapses_and_connectivity/__pycache__/__init__.cpython-311.pyc 
+/Qkdyuf/code/263259/HH_project/synapses_and_connectivity/__pycache__/syn_and_connec_library.cpython-311.pyc.140609301126384 
+/Qkdyuf/code/263259/HH_project/synapses_and_connectivity/__pycache__/syn_and_connec_library.cpython-311.pyc.140609301126384 
+/Qkdyuf/code/263259/HH_project/synapses_and_connectivity/__pycache__/syn_and_connec_library.cpython-311.pyc.140609301126384 
+/Qkdyuf/code/263259/HH_project/synapses_and_connectivity/__pycache__/syn_and_connec_library.cpython-311.pyc.140609301126384 /Qkdyuf/code/263259/HH_project/synapses_and_connectivity/__pycache__/syn_and_connec_library.cpython-311.pyc
+/Qkdyuf/code/263259/HH_project/synapses_and_connectivity/__pycache__/syn_and_connec_construct.cpython-311.pyc.140609301126384 
+/Qkdyuf/code/263259/HH_project/synapses_and_connectivity/__pycache__/syn_and_connec_construct.cpython-311.pyc.140609301126384 
+/Qkdyuf/code/263259/HH_project/synapses_and_connectivity/__pycache__/syn_and_connec_construct.cpython-311.pyc.140609301126384 
+/Qkdyuf/code/263259/HH_project/synapses_and_connectivity/__pycache__/syn_and_connec_construct.cpython-311.pyc.140609301126384 /Qkdyuf/code/263259/HH_project/synapses_and_connectivity/__pycache__/syn_and_connec_construct.cpython-311.pyc
+/Qkdyuf/.cython/brian_extensions/_cython_magic_3fc448f4b5560868820a5142e5c07620.lock 
+/Qkdyuf/.cython/brian_extensions/_cython_magic_3fc448f4b5560868820a5142e5c07620.pyx 
+/Qkdyuf/.cython/brian_extensions/_cython_magic_3fc448f4b5560868820a5142e5c07620.pyx 
+/Qkdyuf/.cython/brian_extensions/_cython_magic_3fc448f4b5560868820a5142e5c07620.pyx 
+/Qkdyuf/.cython/brian_extensions/_cython_magic_3fc448f4b5560868820a5142e5c07620.cpp 
+/Qkdyuf/.cython/brian_extensions/_cython_magic_3fc448f4b5560868820a5142e5c07620.cpp 
+/Qkdyuf/.cython/brian_extensions/_cython_magic_3fc448f4b5560868820a5142e5c07620.cpp 
+/Qkdyuf/.cython/brian_extensions/_cython_magic_3fc448f4b5560868820a5142e5c07620.lock 
+/Qkdyuf/code/263259/HH_project/network_simulations/data/example.npy 
+/Qkdyuf/code/263259/HH_project/network_simulations/data/example.npy 

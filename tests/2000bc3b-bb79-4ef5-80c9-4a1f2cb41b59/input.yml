@@ -1,0 +1,10 @@
+pre_instructions: "ls"
+
+instruction: "python3 Code_BOLD_Calcium_Astrocyte/Integration_rk_1stO_BOLD_Astro_Final.py"
+
+model_instance_id: "2000bc3b-bb79-4ef5-80c9-4a1f2cb41b59"
+
+
+hbp_user: ""
+
+hbp_password: ""

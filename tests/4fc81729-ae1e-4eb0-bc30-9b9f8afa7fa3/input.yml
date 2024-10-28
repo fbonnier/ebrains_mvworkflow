@@ -1,0 +1,9 @@
+pre_instructions: "pip3 install matplotlib==3.5.2"
+
+instruction: "cd code/master/PotjansDiesmann2014-master/PyNEST; python3 run_microcircuit.py"
+
+model_instance_id: "4fc81729-ae1e-4eb0-bc30-9b9f8afa7fa3"
+
+hbp_user: ""
+
+hbp_password: ""

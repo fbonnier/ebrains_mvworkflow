@@ -1,0 +1,9 @@
+pre_instructions: "ls"
+
+instruction: "python3 PD_BG_Cereb_loop/run_scripts.py 1"
+
+model_instance_id: "cc175e85-2b99-489b-bdd1-9aea99a19960"
+
+hbp_user: ""
+
+hbp_password: ""
