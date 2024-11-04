@@ -24,7 +24,7 @@ inputs:
 
   instruction: string
 
-  pre_instructions: string
+  pre_instructions: string?
 
   # code_folder:
   #   type:
