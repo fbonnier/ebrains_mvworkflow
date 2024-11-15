@@ -30,11 +30,13 @@ outputs:
 
 
 requirements:
-    InitialWorkDirRequirement:
-        listing:
-            - entry: $(inputs.code_folder)
-              writable: True
-            - entry: $(inputs.outputs_folder)
-              writable: True
-            - entry: $(inputs.report)
-              writable: False
+    - class: InitialWorkDirRequirement
+      listing:
+      - entry: $(inputs.code_folder)
+        writable: True
+      - entry: $(inputs.outputs_folder)
+        writable: True
+      - entry: $(inputs.report)
+        writable: False
+    - class: DockerRequirement
+      dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-ebrains-base:esd

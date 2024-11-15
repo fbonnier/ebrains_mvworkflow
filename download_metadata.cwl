@@ -6,10 +6,14 @@ label: Download Metadata TODO
 $namespaces:
   sbg: 'https://www.sevenbridges.com/'
 
-requirements: []
+# requirements: []
   # - class: InitialWorkDirRequirement
   #   listing:
   #     -$(inputs.workdir)
+requirements:
+  - class: DockerRequirement
+    dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-ebrains-base:esd
+
 
   # 'sbg:license': CeCiLL
   # 'sbg:toolAuthor': Florent Bonnier

@@ -13,6 +13,10 @@ $namespaces:
   # 'sbg:license': CeCiLL
   # 'sbg:toolAuthor': Florent Bonnier
 baseCommand: ["script_generator"]
+requirements:
+  - class: DockerRequirement
+    dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-ebrains-base:esd
+
 
 inputs:
   jsonfile:

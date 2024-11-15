@@ -35,9 +35,8 @@ outputs:
     outputBinding:
       glob: watchdog_report.json
 
-
 requirements:                                                                   
-  InitialWorkDirRequirement: 
+  - class: InitialWorkDirRequirement 
     listing:
       - entry: $(inputs.report)
         writable: True
@@ -45,3 +44,5 @@ requirements:
         writable: true
       - entry: $(inputs.outputs_folder)
         writable: true
+  - class: DockerRequirement
+    dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-ebrains-base:esd

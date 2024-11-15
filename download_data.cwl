@@ -8,8 +8,11 @@ $namespaces:
 
 baseCommand: ["hbp_download_data"]
 
-requirements:                                                                   
-  InitialWorkDirRequirement: 
+requirements:
+  - class: DockerRequirement
+    dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-ebrains-base:esd
+                                                           
+  - class: InitialWorkDirRequirement 
     listing:
       - entry: $(inputs.report)
         writable: True
@@ -38,7 +41,3 @@ outputs:
     type: Directory
     outputBinding:
       glob: "./code/"
-  
-
-'sbg:license': CeCiLL
-'sbg:toolAuthor': Florent Bonnier

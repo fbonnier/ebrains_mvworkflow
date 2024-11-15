@@ -7,6 +7,9 @@ $namespaces:
   sbg: 'https://www.sevenbridges.com/'
 
 baseCommand: ["decision_maker", "--out", "score_report.json"]
+requirements:
+  - class: DockerRequirement
+    dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-ebrains-base:esd
 
 inputs:
   report_list:
@@ -26,7 +29,7 @@ outputs:
         outputBinding:
           glob: score_report.json
 
-requirements: []
+# requirements: []
     # InitialWorkDirRequirement:
     #     listing:
     #         - entry: $(inputs.verification_output_analysis_report)

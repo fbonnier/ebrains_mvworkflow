@@ -53,9 +53,15 @@ outputs:
 
 
 requirements:
-    InitialWorkDirRequirement:
-        listing:
-            - entry: $(inputs.code_folder)
-              writable: true
-            - entry: $(inputs.outputs_folder)
-              writable: true
+    - class: DockerRequirement
+      # dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-ebrains-base:esd
+      # dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-3b184b0c-d3b4-47f3-9d6d-4e18aff952ae
+      # dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-4fc81729-ae1e-4eb0-bc30-9b9f8afa7fa3
+      dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-fa393b61-92ab-4925-ad53-d36cde34c5d6
+
+    - class: InitialWorkDirRequirement
+      listing:
+        - entry: $(inputs.code_folder)
+          writable: true
+        - entry: $(inputs.outputs_folder)
+          writable: true

@@ -28,9 +28,11 @@ outputs:
       glob: documentation_report.json
 
 requirements:
-    InitialWorkDirRequirement:
-        listing:
-            - entry: $(inputs.code_folder)
-              writable: True
-            - entry: $(inputs.report)
-              writable: False
+    - class: InitialWorkDirRequirement
+      listing:
+      - entry: $(inputs.code_folder)
+        writable: True
+      - entry: $(inputs.report)
+        writable: False
+    - class: DockerRequirement
+      dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-ebrains-base:esd
