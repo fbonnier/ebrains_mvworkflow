@@ -1,6 +1,6 @@
 # Automate model checking workflow
 class: Workflow
-cwlVersion: v1.0
+cwlVersion: v1.2
 id: model_verification
 label: Model Verification TODO
 $namespaces:
@@ -93,6 +93,12 @@ outputs:
     type: File
     outputSource: decision_maker/decision_report
 
+  # run_stderr:
+  #   type: File
+  #   outputSource: run_model/output_stderr
+  # run_stdout:
+  #   type: File
+  #   outputSource: run_model/output_stdout
 
 
 steps:
@@ -140,7 +146,8 @@ steps:
       runscript: script_generator/runscript_bash
       code_folder: download_data/code_folder
       outputs_folder: download_data/outputs_folder
-      
+    
+    # out: [watchdog_report, outputs_folder, code_folder, output_stdout, output_stderr]
     out: [watchdog_report, outputs_folder, code_folder]
 
     label: Run model
