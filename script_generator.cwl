@@ -15,7 +15,7 @@ $namespaces:
 baseCommand: ["script_generator"]
 requirements:
   - class: DockerRequirement
-    dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-ebrains-base:esd
+    dockerPull: docker-registry.ebrains.eu/ebrains-model-verification/ebrains-model-verification
 
 
 inputs:

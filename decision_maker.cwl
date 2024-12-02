@@ -9,7 +9,7 @@ $namespaces:
 baseCommand: ["decision_maker", "--out", "score_report.json"]
 requirements:
   - class: DockerRequirement
-    dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-ebrains-base:esd
+    dockerPull: docker-registry.ebrains.eu/ebrains-model-verification/ebrains-model-verification
 
 inputs:
   report_list:

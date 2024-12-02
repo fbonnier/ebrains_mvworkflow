@@ -46,8 +46,8 @@ inputs:
 
     
 requirements:
-  - class: DockerRequirement
-    dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-ebrains-base:esd
+  # - class: DockerRequirement
+  #   dockerPull: docker-registry.ebrains.eu/ebrains-model-verification/docker-ebrains-base:esd
     # dockerOutputDirectory: "/tmp/cwl-test" 
   # - class: InitialWorkDirRequirement
   #   listing:
