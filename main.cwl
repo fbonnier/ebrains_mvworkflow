@@ -6,12 +6,6 @@ label: Model Verification TODO
 $namespaces:
   sbg: 'https://www.sevenbridges.com/'
 
-# hints:
-#   DockerRequirement:
-#     dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-ebrains-base
-#     # dockerImageId: docker-registry.ebrains.eu/hbp-model-validation/docker-ebrains-base
-#     dockerOutputDirectory: "/tmp/cwl-test" 
-
 inputs:
   # hbp_token: string
   hbp_user: string?
@@ -26,38 +20,9 @@ inputs:
 
   pre_instructions: string?
 
-  # code_folder:
-  #   type:
-  #     type: array
-  #     items: [Directory, File]
-
-  # outputs_folder:
-  #   type:
-  #     type: array
-  #     items: [Directory, File]
-  # workdir: Directory
-  # workdir: string
-
-  # hbp_pass: string
-    
-  # hbp_user: string
-
-  # jsonfile: File
-
-    
 requirements:
-  # - class: DockerRequirement
-  #   dockerPull: docker-registry.ebrains.eu/ebrains-model-verification/docker-ebrains-base:esd
-    # dockerOutputDirectory: "/tmp/cwl-test" 
-  # - class: InitialWorkDirRequirement
-  #   listing:
-  #     - $(inputs.code_folder)
-  #     - $(inputs.outputs_folder)
   - class: InlineJavascriptRequirement
   - class: MultipleInputFeatureRequirement
-  # InitialWorkDirRequirement:
-  #   listing:
-  #     - $(inputs.workdir)
   # 'sbg:license': CeCiLL
   # 'sbg:toolAuthor': Florent Bonnier
 
