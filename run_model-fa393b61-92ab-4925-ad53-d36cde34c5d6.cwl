@@ -62,3 +62,6 @@ requirements:
           writable: true
         - entry: $(inputs.outputs_folder)
           writable: true
+
+    - class: NetworkAccess
+      networkAccess: true

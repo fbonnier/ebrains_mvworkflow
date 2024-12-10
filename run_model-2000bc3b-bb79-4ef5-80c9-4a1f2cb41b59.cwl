@@ -63,7 +63,7 @@ outputs:
 
 requirements:
     - class: DockerRequirement
-      dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-4fc81729-ae1e-4eb0-bc30-9b9f8afa7fa3 # read access to /opt/data  
+      dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-2000bc3b-bb79-4ef5-80c9-4a1f2cb41b59 # read access to /opt/data  
 
     - class: InitialWorkDirRequirement
       listing:
