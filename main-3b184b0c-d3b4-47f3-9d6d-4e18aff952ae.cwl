@@ -20,6 +20,12 @@ inputs:
 
   pre_instructions: string?
 
+  outputs_link: 
+    - string?
+    - File?
+
+  # output_archive: File[]?
+
 requirements:
   - class: InlineJavascriptRequirement
   - class: MultipleInputFeatureRequirement
@@ -73,12 +79,14 @@ steps:
   download_metadata: 
     run: download_metadata.cwl
     in:
-      # hbp_token: hbp_token
+      hbp_token: hbp_token
       hbp_user: hbp_user
       hbp_password: hbp_password
       model_instance_id: model_instance_id
       instruction: instruction
       pre_instructions: pre_instructions
+      outputs_link: outputs_link
+      # output_archive: output_archive
       
     out: [report]
 
@@ -90,6 +98,7 @@ steps:
     run: download_data.cwl
     in:
       report: download_metadata/report
+      outputs_link: outputs_link
       
     out: [report, code_folder, outputs_folder]
 

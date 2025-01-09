@@ -20,6 +20,8 @@ inputs:
 
   pre_instructions: string?
 
+  outputs_link: string?
+
 requirements:
   - class: InlineJavascriptRequirement
   - class: MultipleInputFeatureRequirement
@@ -73,12 +75,13 @@ steps:
   download_metadata: 
     run: download_metadata.cwl
     in:
-      # hbp_token: hbp_token
+      hbp_token: hbp_token
       hbp_user: hbp_user
       hbp_password: hbp_password
       model_instance_id: model_instance_id
       instruction: instruction
       pre_instructions: pre_instructions
+      outputs_link: outputs_link
       
     out: [report]
 

@@ -24,6 +24,13 @@ inputs:
     inputBinding:
       position: 1
       prefix: --json
+  outputs_link:
+    type: 
+      - string?
+      - File?
+    inputBinding:
+      position: 2
+      prefix: --outputs
 
 outputs:
   report:

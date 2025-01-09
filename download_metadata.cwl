@@ -20,11 +20,11 @@ requirements:
 baseCommand: ["hbp_cwl_input_downloader"]
 
 inputs:
-  # hbp_token:
-  #   type: string
-  #   inputBinding:
-  #       position: 1
-  #       prefix: --token
+  hbp_token:
+    type: string
+    inputBinding:
+        position: 1
+        prefix: --token
 
   hbp_user:
     type: string
@@ -62,8 +62,21 @@ inputs:
       position: 4
       prefix: --pre-run
     # dirname: workdir
-    # basename: 
-    
+    # basename:
+
+  outputs_link:
+    type: 
+      - string?
+      - File?
+    inputBinding:
+      position: 5
+      prefix: --outputs
+  
+  # output_archive:
+  #   type: File[]?
+  #   inputBinding:
+  #     position: 6
+  #     prefix: --archive
 
 outputs: 
     report:
