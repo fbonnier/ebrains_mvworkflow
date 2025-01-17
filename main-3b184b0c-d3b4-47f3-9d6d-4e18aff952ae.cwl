@@ -86,7 +86,6 @@ steps:
       instruction: instruction
       pre_instructions: pre_instructions
       outputs_link: outputs_link
-      # output_archive: output_archive
       
     out: [report]
 

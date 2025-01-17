@@ -20,7 +20,9 @@ inputs:
 
   pre_instructions: string?
 
-  outputs_link: string?
+  outputs_link:
+    - string?
+    - File?
 
 requirements:
   - class: InlineJavascriptRequirement
@@ -93,6 +95,7 @@ steps:
     run: download_data.cwl
     in:
       report: download_metadata/report
+      outputs_link: outputs_link
       
     out: [report, code_folder, outputs_folder]
 
