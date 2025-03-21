@@ -54,7 +54,7 @@ outputs:
 
 requirements:
     - class: DockerRequirement 
-      dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-fa393b61-92ab-4925-ad53-d36cde34c5d6 # Works 
+      dockerPull: docker-registry.ebrains.eu/ebrains-model-verification/fa393b61-92ab-4925-ad53-d36cde34c5d6 # Works 
 
     - class: InitialWorkDirRequirement
       listing:
