@@ -20,6 +20,8 @@ inputs:
 
   pre_instructions: string?
 
+  machine_configuration_file: File?
+
 requirements:
   - class: InlineJavascriptRequirement
   - class: MultipleInputFeatureRequirement
@@ -100,6 +102,7 @@ steps:
     run: script_generator.cwl
     in:
       jsonfile: download_data/report
+      machine_config: machine_configuration_file
 
     out: [runscript_bash]
     label: Generates runscript

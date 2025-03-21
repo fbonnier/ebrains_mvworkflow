@@ -7,3 +7,5 @@ model_instance_id: "fa393b61-92ab-4925-ad53-d36cde34c5d6"
 hbp_user: ""
 
 hbp_password: ""
+
+machine_config: JUSUF-config.json

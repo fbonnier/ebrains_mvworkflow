@@ -1,8 +1,8 @@
 # Automate model checking workflow
 class: CommandLineTool
 cwlVersion: v1.0
-id: download_metadata
-label: Download Metadata TODO
+id: script_generator
+label: Script generator
 $namespaces:
   sbg: 'https://www.sevenbridges.com/'
 
@@ -25,7 +25,14 @@ inputs:
     inputBinding:
         position: 1
         prefix: --json
-    
+
+    # Configuration JSON file to configure the computing machine
+  machine_config:
+    type: File?
+    inputBinding:
+      position: 2
+      prefix: --machine
+
 
 outputs: 
     runscript_bash:
@@ -33,3 +40,21 @@ outputs:
         # format: sh
         outputBinding:
           glob: run_me.sh
+    
+    srunscript_bash:
+        type: File
+        # format: sh
+        outputBinding:
+          glob: srun_me.sh
+
+    runscript_cwl:
+        type: File
+        # format: cwl
+        outputBinding:
+          glob: run_me.cwl
+
+    input_cwl:
+        type: File
+        # format: cwl
+        outputBinding:
+          glob: input_me.yml

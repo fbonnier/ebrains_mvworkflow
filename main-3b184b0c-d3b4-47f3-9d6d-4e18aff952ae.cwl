@@ -24,6 +24,8 @@ inputs:
     - string?
     - File?
 
+  machine_configuration_file: File?
+
   # output_archive: File[]?
 
 requirements:
@@ -108,6 +110,7 @@ steps:
     run: script_generator.cwl
     in:
       jsonfile: download_data/report
+      machine_config: machine_configuration_file
 
     out: [runscript_bash]
     label: Generates runscript
