@@ -1,0 +1,5 @@
+cwltool:overrides:
+  run_model.cwl:
+    requirements:
+      DockerRequirement:
+        dockerPull: docker-registry.ebrains.eu/ebrains-model-verification/docker-803c92ff-16f5-4fea-8827-d8416fd65745

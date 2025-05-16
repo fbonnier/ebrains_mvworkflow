@@ -1,0 +1,15 @@
+pre_instructions: ""
+
+instruction: ""
+
+model_instance_id: "803c92ff-16f5-4fea-8827-d8416fd65745"
+
+hbp_user: ""
+
+hbp_password: ""
+
+hbp_token: ""
+
+outputs_link:
+  class: File
+  path: /gpfs/workdir/bonnierf/TEST/model_verification/803c92ff-16f5-4fea-8827-d8416fd65745/
