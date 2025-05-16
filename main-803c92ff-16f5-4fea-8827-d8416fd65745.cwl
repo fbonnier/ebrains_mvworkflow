@@ -115,7 +115,7 @@ steps:
 
 # Run the model if script has been generated
   run_model:
-    run: run_model-fa393b61-92ab-4925-ad53-d36cde34c5d6.cwl
+    run: run_model-803c92ff-16f5-4fea-8827-d8416fd65745.cwl
     in:
       runscript: script_generator/runscript_bash
       code_folder: download_data/code_folder

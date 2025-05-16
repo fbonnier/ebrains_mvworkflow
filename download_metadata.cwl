@@ -84,3 +84,8 @@ outputs:
         # format: json
         outputBinding:
           glob: metadata-report.json
+    stderr_file: stderr
+    stdout_file: stdout
+
+stderr: stderr.txt
+stdout: stdout.txt

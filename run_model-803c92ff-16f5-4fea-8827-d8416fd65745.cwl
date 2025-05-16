@@ -53,7 +53,7 @@ outputs:
 
 requirements:
     - class: DockerRequirement 
-      dockerPull: docker-registry.ebrains.eu/hbp-model-validation/docker-803c92ff-16f5-4fea-8827-d8416fd65745 # TODO 
+      dockerPull: docker-registry.ebrains.eu/spinncer/spinncer-nest
 
     - class: InitialWorkDirRequirement
       listing:

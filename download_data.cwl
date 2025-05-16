@@ -12,15 +12,14 @@ requirements:
   - class: DockerRequirement
     dockerPull: docker-registry.ebrains.eu/ebrains-model-verification/ebrains-model-verification
                                                            
-  - class: InitialWorkDirRequirement 
-    listing:
-      - entry: $(inputs.report)
-        writable: True
+  # - class: InitialWorkDirRequirement 
+  #   listing:
+  #     - entry: $(inputs.report)
+  #       writable: True
 
 inputs:
   report:
     type: File
-    # format: json
     inputBinding:
       position: 1
       prefix: --json
