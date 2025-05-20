@@ -41,12 +41,12 @@ outputs:
   outputs_folder:
     type: Directory
     outputBinding:
-      glob: "outputs"
+      glob: outputs
     
   code_folder:
     type: Directory
     outputBinding:
-      glob: "code"
+      glob: code
 
   stderr_file: stderr
   stdout_file: stdout
