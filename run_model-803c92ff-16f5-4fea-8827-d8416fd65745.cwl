@@ -6,11 +6,7 @@ label: Run Model
 $namespaces:
   sbg: 'https://www.sevenbridges.com/'
 
-baseCommand: [sh]
-
-
-# stdout: run_stdout.txt
-# stderr: run_stderr.txt
+baseCommand: [/bin/sh]
 
 inputs:
     runscript:
@@ -38,22 +34,22 @@ outputs:
     outputs_folder:
         type: Directory
         outputBinding:
-            glob: "./outputs/"
+            glob: outputs
 
     code_folder:
         type: Directory
         outputBinding:
-            glob: "./code/"
+            glob: code
 
-    # output_stdout:
-    #     type: stdout
+    output_stdout: stdout
+    output_stderr: stderr
 
-    # output_stderr:
-    #     type: stderr
+stdout: run_stdout.txt
+stderr: run_stderr.txt
 
 requirements:
     - class: DockerRequirement 
-      dockerPull: docker-registry.ebrains.eu/spinncer/spinncer-nest
+      dockerPull: docker-registry.ebrains.eu/ebrains-model-verification/803c92ff-16f5-4fea-8827-d8416fd65745:nest
 
     - class: InitialWorkDirRequirement
       listing:

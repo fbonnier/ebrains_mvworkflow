@@ -41,20 +41,25 @@ outputs:
         outputBinding:
           glob: run_me.sh
     
-    srunscript_bash:
-        type: File
-        # format: sh
-        outputBinding:
-          glob: srun_me.sh
+    # srunscript_bash:
+    #     type: File
+    #     # format: sh
+    #     outputBinding:
+    #       glob: srun_me.sh
 
-    runscript_cwl:
-        type: File
-        # format: cwl
-        outputBinding:
-          glob: run_me.cwl
+    # runscript_cwl:
+    #     type: File
+    #     # format: cwl
+    #     outputBinding:
+    #       glob: run_me.cwl
 
-    input_cwl:
-        type: File
-        # format: cwl
-        outputBinding:
-          glob: input_me.yml
+    # input_yml:
+    #     type: File
+    #     # format: cwl
+    #     outputBinding:
+    #       glob: input_me.yml
+    stderr_file: stderr
+    stdout_file: stdout 
+
+stderr: stderr.txt
+stdout: stdout.txt

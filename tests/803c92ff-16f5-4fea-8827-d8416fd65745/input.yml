@@ -1,6 +1,6 @@
-pre_instructions: "cd code/SpiNNCer-master; pip3 install ."
+pre_instructions: ""
 
-instruction: "cd code/SpiNNCer-master; python3 spinncer/cerebellum.py"
+instruction: "cd /nest_dev/SpiNNCer-master/spinncer; python3 cerebellum_experiment.py --simulator nest --input scaffold_full_dcn_400.0x400.0_v3.hdf5 -o nest_400x400_pss_3 -s 400x400_stimulus_3.npz --id_remap grid"
 
 model_instance_id: "803c92ff-16f5-4fea-8827-d8416fd65745"
 
