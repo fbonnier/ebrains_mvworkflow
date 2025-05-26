@@ -57,6 +57,10 @@ requirements:
           writable: true
         - entry: $(inputs.outputs_folder)
           writable: true
+        - entry: SpiNNCer-master/spinncer/results
+          writable: true
+        # - entry: SpiNNCer-master/spinncer/figures
+          # writable: true
 
     - class: NetworkAccess
       networkAccess: true
