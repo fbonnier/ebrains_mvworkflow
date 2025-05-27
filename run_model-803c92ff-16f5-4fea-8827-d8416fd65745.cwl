@@ -14,15 +14,15 @@ inputs:
         inputBinding:
             position: 1
 
-    code_folder:
-        type: Directory
-            # inputBinding:
-            #     position: 2
+    # code_folder:
+    #     type: Directory
+    #         # inputBinding:
+    #         #     position: 2
 
-    outputs_folder:
-        type: Directory
+    # results_path:
+    #     type: string?
             # inputBinding:
-            #     position: 3    
+            #     position: 3
 
 outputs: 
 
@@ -31,15 +31,15 @@ outputs:
         outputBinding:
             glob: watchdog_log.txt
 
-    outputs_folder:
+    results_folder:
         type: Directory
         outputBinding:
             glob: outputs
 
-    code_folder:
-        type: Directory
-        outputBinding:
-            glob: code
+    # code_folder:
+    #     type: Directory
+    #     outputBinding:
+    #         glob: code
 
     output_stdout: stdout
     output_stderr: stderr
@@ -57,10 +57,6 @@ requirements:
           writable: true
         - entry: $(inputs.outputs_folder)
           writable: true
-        - entry: SpiNNCer-master/spinncer/results
-          writable: true
-        # - entry: SpiNNCer-master/spinncer/figures
-          # writable: true
 
     - class: NetworkAccess
       networkAccess: true

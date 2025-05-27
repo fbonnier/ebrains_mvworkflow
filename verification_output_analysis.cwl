@@ -19,7 +19,7 @@ inputs:
   outputs_folder:
     type: Directory
     
-  code_folder:
+  results_folder:
     type: Directory
 
 outputs: 
@@ -32,7 +32,7 @@ outputs:
 requirements:
     - class: InitialWorkDirRequirement
       listing:
-      - entry: $(inputs.code_folder)
+      - entry: $(inputs.results_folder)
         writable: True
       - entry: $(inputs.outputs_folder)
         writable: True

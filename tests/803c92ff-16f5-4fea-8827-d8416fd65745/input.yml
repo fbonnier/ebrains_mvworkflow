@@ -1,6 +1,6 @@
 pre_instructions: ""
 
-instruction: "cd /nest_dev/SpiNNCer-master/spinncer; python3 cerebellum_experiment.py --simulator nest --input scaffold_full_dcn_400.0x400.0_v3.hdf5 -o nest_400x400_pss_3 -s 400x400_stimulus_3.npz --id_remap grid"
+instruction: "cd /nest_dev/SpiNNCer-master/spinncer; python3 cerebellum_experiment.py --simulator nest --input scaffold_full_dcn_400.0x400.0_v3.hdf5 --figures_dir /nest_dev/outputs/figures --result_dir /nest_dev/outputs/results -o nest_400x400_pss_3 -s 400x400_stimulus_3.npz --id_remap grid"
 
 model_instance_id: "803c92ff-16f5-4fea-8827-d8416fd65745"
 
@@ -14,3 +14,5 @@ hbp_token: ""
 outputs_link:
   class: File
   path: /gpfs/workdir/bonnierf/TEST/model_verification/803c92ff-16f5-4fea-8827-d8416fd65745/outputs/gold_standard_results_400.npz
+
+results_path: "/tmp/outputs"

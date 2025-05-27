@@ -23,10 +23,10 @@ inputs:
       position: 2
       prefix: --watchdog
 
-  code_folder:
-    type: Directory
+  # code_folder:
+  #   type: Directory
     
-  outputs_folder:
+  results_folder:
     type: Directory
           
 outputs: 
@@ -40,9 +40,9 @@ requirements:
     listing:
       - entry: $(inputs.report)
         writable: True
-      - entry: $(inputs.code_folder)
-        writable: true
-      - entry: $(inputs.outputs_folder)
+      # - entry: $(inputs.code_folder)
+      #   writable: true
+      - entry: $(inputs.results_folder)
         writable: true
   - class: DockerRequirement
     dockerPull: docker-registry.ebrains.eu/ebrains-model-verification/ebrains-model-verification

@@ -33,6 +33,12 @@ inputs:
       position: 2
       prefix: --machine
 
+    # Configuration JSON file to configure the computing machine
+  results_path:
+    type: string?
+    inputBinding:
+      position: 3
+      prefix: --outputdir
 
 outputs: 
     runscript_bash:
