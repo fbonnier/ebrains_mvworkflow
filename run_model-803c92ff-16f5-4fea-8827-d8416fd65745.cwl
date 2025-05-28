@@ -51,12 +51,10 @@ requirements:
     - class: DockerRequirement 
       dockerPull: docker-registry.ebrains.eu/ebrains-model-verification/803c92ff-16f5-4fea-8827-d8416fd65745:nest
 
-    - class: InitialWorkDirRequirement
-      listing:
-        - entry: $(inputs.code_folder)
-          writable: true
-        - entry: $(inputs.outputs_folder)
-          writable: true
+    # - class: InitialWorkDirRequirement
+    #   listing:
+    #     - entry: $(inputs.results_folder)
+    #       writable: true
 
     - class: NetworkAccess
       networkAccess: true
