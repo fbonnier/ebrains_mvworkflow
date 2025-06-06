@@ -91,7 +91,7 @@ steps:
       model_instance_id: model_instance_id
       instruction: instruction
       pre_instructions: pre_instructions
-      outputs_link: outputs_link
+      # outputs_link: outputs_link
       
     out: [report]
 

@@ -64,13 +64,13 @@ inputs:
     # dirname: workdir
     # basename:
 
-  outputs_link:
-    type: 
-      - string?
-      - File?
-    inputBinding:
-      position: 5
-      prefix: --outputs
+  # outputs_link:
+  #   type: 
+  #     - string?
+  #     - File?
+  #   inputBinding:
+  #     position: 5
+  #     prefix: --outputs
   
   # output_archive:
   #   type: File[]?
