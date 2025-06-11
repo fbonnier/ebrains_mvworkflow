@@ -34,7 +34,7 @@ outputs:
     results_folder:
         type: Directory
         outputBinding:
-            glob: outputs
+            glob: res_outputs
 
     # code_folder:
     #     type: Directory
