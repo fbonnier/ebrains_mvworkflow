@@ -26,7 +26,7 @@ inputs:
 
   machine_configuration_file: File?
 
-  # output_archive: File[]?
+  results_path: string?
 
 requirements:
   - class: InlineJavascriptRequirement
@@ -66,6 +66,11 @@ outputs:
     type: File
     outputSource: decision_maker/decision_report
 
+  results-folder:
+    type: Directory
+    outputSource: run_model/results_folder
+
+
   # run_stderr:
   #   type: File
   #   outputSource: run_model/output_stderr
@@ -87,7 +92,7 @@ steps:
       model_instance_id: model_instance_id
       instruction: instruction
       pre_instructions: pre_instructions
-      outputs_link: outputs_link
+      # outputs_link: outputs_link
       
     out: [report]
 
@@ -111,6 +116,7 @@ steps:
     in:
       jsonfile: download_data/report
       machine_config: machine_configuration_file
+      results_path: results_path
 
     out: [runscript_bash]
     label: Generates runscript
@@ -120,11 +126,11 @@ steps:
     run: run_model-3b184b0c-d3b4-47f3-9d6d-4e18aff952ae.cwl
     in:
       runscript: script_generator/runscript_bash
-      code_folder: download_data/code_folder
-      outputs_folder: download_data/outputs_folder
+      # code_folder: download_data/code_folder
+      # results_path: results_path
     
     # out: [watchdog_report, outputs_folder, code_folder, output_stdout, output_stderr]
-    out: [watchdog_report, outputs_folder, code_folder]
+    out: [watchdog_report, results_folder]
 
     label: Run model
 
@@ -134,8 +140,9 @@ steps:
     in:
       watchdog_report: run_model/watchdog_report
       report: download_data/report
-      code_folder: run_model/code_folder
-      outputs_folder: run_model/outputs_folder
+      # code_folder: download_data/code_folder
+      # outputs_folder: download_data/outputs_folder
+      results_folder: run_model/results_folder
       
     out: [report]
     label: Extract Watchdog
@@ -145,8 +152,8 @@ steps:
     run: verification_output_analysis.cwl
     in:
       report: extract_watchdog/report
-      outputs_folder: run_model/outputs_folder
-      code_folder: run_model/code_folder
+      outputs_folder: download_data/outputs_folder
+      results_folder: run_model/results_folder
 
     out: [output_comparison_report]
 
