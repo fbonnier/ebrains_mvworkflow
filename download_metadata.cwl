@@ -1,10 +1,8 @@
 # Automate model checking workflow
 class: CommandLineTool
 cwlVersion: v1.0
-id: download_metadata
-label: Download Metadata TODO
-$namespaces:
-  sbg: 'https://www.sevenbridges.com/'
+id: ebrains_download_metadata
+label: EBRAINS Download Metadata
 
 # requirements: []
   # - class: InitialWorkDirRequirement
@@ -89,3 +87,19 @@ outputs:
 
 stderr: stderr.txt
 stdout: stdout.txt
+
+s:identifier: https://kg.ebrains.eu/api/instances/0c35cf26-8f91-448e-b531-69b899651e21
+s:keywords: ["model metadata download"]
+s:author:
+  - class: s:Person
+    s:name: Bonnier Florent
+s:codeRepository: https://github.com/fbonnier/ebrains_mvworkflow
+s:version: "1.0"
+s:dateCreated: "2025-08-5"
+s:programmingLanguage: Python
+
+$namespaces:
+ s: https://schema.org/
+
+$schemas:
+ - https://schema.org/version/latest/schemaorg-current-http.rdf
