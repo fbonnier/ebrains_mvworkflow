@@ -1,8 +1,8 @@
 # Automate model checking workflow
 class: CommandLineTool
 cwlVersion: v1.0
-id: ebrains_download_metadata
-label: EBRAINS Download Metadata
+id: download_model_metadata
+label: Download model metadata
 
 # requirements: []
   # - class: InitialWorkDirRequirement
@@ -88,7 +88,7 @@ outputs:
 stderr: stderr.txt
 stdout: stdout.txt
 
-s:identifier: https://kg.ebrains.eu/api/instances/0c35cf26-8f91-448e-b531-69b899651e21
+s:identifier: https://kg.ebrains.eu/api/instances/a25e24ac-febb-4ec4-aebb-e0658c7dfdcf
 s:keywords: ["model metadata download"]
 s:author:
   - class: s:Person

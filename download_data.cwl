@@ -1,10 +1,8 @@
 # Automate model checking workflow
 class: CommandLineTool
 cwlVersion: v1.0
-id: download_data
-label: Download Data TODO
-$namespaces:
-  sbg: 'https://www.sevenbridges.com/'
+id: download_model_data
+label: Download model data
 
 baseCommand: ["hbp_download_data"]
 
@@ -53,3 +51,19 @@ outputs:
 
 stderr: stderr.txt
 stdout: stdout.txt
+
+s:identifier: https://kg.ebrains.eu/api/instances/34e4221a-c13d-4a02-b541-486cb567feb8
+s:keywords: ["model data download"]
+s:author:
+  - class: s:Person
+    s:name: Bonnier Florent
+s:codeRepository: https://github.com/fbonnier/ebrains_mvworkflow
+s:version: "1.0"
+s:dateCreated: "2025-08-5"
+s:programmingLanguage: Python
+
+$namespaces:
+ s: https://schema.org/
+
+$schemas:
+ - https://schema.org/version/latest/schemaorg-current-http.rdf
