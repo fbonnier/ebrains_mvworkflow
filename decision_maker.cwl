@@ -2,9 +2,7 @@
 class: CommandLineTool
 cwlVersion: v1.0
 id: decision_maker
-label: Decision Maker TODO
-$namespaces:
-  sbg: 'https://www.sevenbridges.com/'
+label: Decision Maker
 
 baseCommand: ["decision_maker", "--out", "score_report.json"]
 requirements:
@@ -34,3 +32,20 @@ outputs:
     #     listing:
     #         - entry: $(inputs.verification_output_analysis_report)
     #           writable: True
+
+
+s:identifier: https://kg.ebrains.eu/api/instances/f8300f8f-ac19-4396-bcd9-f31cdb3c1247
+s:keywords: ["watchdog extractor"]
+s:author:
+  - class: s:Person
+    s:name: Bonnier Florent
+s:codeRepository: https://github.com/fbonnier/ebrains_mvworkflow
+s:version: "1.0"
+s:dateCreated: "2025-08-5"
+s:programmingLanguage: Python
+
+$namespaces:
+ s: https://schema.org/
+
+$schemas:
+ - https://schema.org/version/latest/schemaorg-current-http.rdf

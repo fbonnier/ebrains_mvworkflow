@@ -1,10 +1,8 @@
 # Automate model checking workflow
 class: CommandLineTool
 cwlVersion: v1.0
-id: script_generator
-label: Script generator
-$namespaces:
-  sbg: 'https://www.sevenbridges.com/'
+id: model_script_generator
+label: Model script generator
 
   # - class: InitialWorkDirRequirement
   #   listing:
@@ -69,3 +67,20 @@ outputs:
 
 stderr: stderr.txt
 stdout: stdout.txt
+
+
+s:identifier: https://kg.ebrains.eu/api/instances/c105e323-1f6a-480b-9e9c-83fec2e1a300
+s:keywords: ["model script generator"]
+s:author:
+  - class: s:Person
+    s:name: Bonnier Florent
+s:codeRepository: https://github.com/fbonnier/ebrains_mvworkflow
+s:version: "1.0"
+s:dateCreated: "2025-08-5"
+s:programmingLanguage: Python
+
+$namespaces:
+ s: https://schema.org/
+
+$schemas:
+ - https://schema.org/version/latest/schemaorg-current-http.rdf

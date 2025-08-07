@@ -1,10 +1,8 @@
 # Automate model checking workflow
 class: Workflow
 cwlVersion: v1.2
-id: model_verification
-label: Model Verification TODO
-$namespaces:
-  sbg: 'https://www.sevenbridges.com/'
+id: model_verification_fa393b61-92ab-4925-ad53-d36cde34c5d6
+label: Model Verification fa393b61-92ab-4925-ad53-d36cde34c5d6
 
 inputs:
   # hbp_token: string
@@ -172,3 +170,20 @@ steps:
       
     out: [decision_report]
     label: Decision Maker
+
+
+s:identifier: https://kg.ebrains.eu/api/instances/fbcef0f9-369c-45cb-a0be-56fdecdc9745
+s:keywords: ["watchdog extractor"]
+s:author:
+  - class: s:Person
+    s:name: Bonnier Florent
+s:codeRepository: https://github.com/fbonnier/ebrains_mvworkflow
+s:version: "1.0"
+s:dateCreated: "2025-08-5"
+s:programmingLanguage: Python
+
+$namespaces:
+ s: https://schema.org/
+
+$schemas:
+ - https://schema.org/version/latest/schemaorg-current-http.rdf
