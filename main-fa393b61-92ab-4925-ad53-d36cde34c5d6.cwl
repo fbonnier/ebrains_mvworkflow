@@ -173,7 +173,7 @@ steps:
 
 
 s:identifier: https://kg.ebrains.eu/api/instances/fbcef0f9-369c-45cb-a0be-56fdecdc9745
-s:keywords: ["watchdog extractor"]
+s:keywords: ["model verification fa393b61-92ab-4925-ad53-d36cde34c5d6"]
 s:author:
   - class: s:Person
     s:name: Bonnier Florent

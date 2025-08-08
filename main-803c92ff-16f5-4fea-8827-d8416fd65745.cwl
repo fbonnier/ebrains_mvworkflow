@@ -1,10 +1,9 @@
 # Automate model checking workflow
 class: Workflow
 cwlVersion: v1.2
-id: model_verification
-label: Model Verification TODO
-$namespaces:
-  sbg: 'https://www.sevenbridges.com/'
+id: model_verification_803c92ff-16f5-4fea-8827-d8416fd65745
+label: Model Verification 803c92ff-16f5-4fea-8827-d8416fd65745
+
 
 inputs:
   # hbp_token: string
@@ -180,3 +179,20 @@ steps:
       
     out: [decision_report]
     label: Decision Maker
+
+
+s:identifier: https://kg.ebrains.eu/api/instances/
+s:keywords: ["model verification 803c92ff-16f5-4fea-8827-d8416fd65745"]
+s:author:
+  - class: s:Person
+    s:name: Bonnier Florent
+s:codeRepository: https://github.com/fbonnier/ebrains_mvworkflow
+s:version: "1.0"
+s:dateCreated: "2025-08-5"
+s:programmingLanguage: Python
+
+$namespaces:
+ s: https://schema.org/
+
+$schemas:
+ - https://schema.org/version/latest/schemaorg-current-http.rdf
