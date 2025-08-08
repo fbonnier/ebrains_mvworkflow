@@ -113,14 +113,15 @@ steps:
 
 # Run the model if script has been generated
   run_model:
-    run: run_model-fa393b61-92ab-4925-ad53-d36cde34c5d6.cwl
+    # run: run_model-fa393b61-92ab-4925-ad53-d36cde34c5d6.cwl
+    run: run_model.cwl
     in:
       runscript: script_generator/runscript_bash
       code_folder: download_data/code_folder
       outputs_folder: download_data/outputs_folder
     
     # out: [watchdog_report, outputs_folder, code_folder, output_stdout, output_stderr]
-    out: [watchdog_report, outputs_folder, code_folder]
+    out: [watchdog_report, results_folder]
 
     label: Run model
 
@@ -130,8 +131,9 @@ steps:
     in:
       watchdog_report: run_model/watchdog_report
       report: download_data/report
-      code_folder: run_model/code_folder
-      outputs_folder: run_model/outputs_folder
+      # code_folder: download_data/code_folder
+      # outputs_folder: download_data/outputs_folder
+      results_folder: run_model/results_folder
       
     out: [report]
     label: Extract Watchdog
@@ -141,8 +143,8 @@ steps:
     run: verification_output_analysis.cwl
     in:
       report: extract_watchdog/report
-      outputs_folder: run_model/outputs_folder
-      code_folder: run_model/code_folder
+      outputs_folder: download_data/outputs_folder
+      results_folder: run_model/results_folder
 
     out: [output_comparison_report]
 
