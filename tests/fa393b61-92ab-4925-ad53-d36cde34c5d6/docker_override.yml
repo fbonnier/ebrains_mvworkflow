@@ -1,0 +1,5 @@
+cwltool:overrides:
+  /home/fbonnier/Documents/sandbox/model_verification_workdir/ebrains_mvworkflow/run_model.cwl#run_model:
+    requirements:
+      - class: DockerRequirement
+        dockerPull: docker-registry.ebrains.eu/ebrains-model-verification/fa393b61-92ab-4925-ad53-d36cde34c5d6

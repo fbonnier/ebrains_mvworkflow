@@ -1,0 +1,11 @@
+pre_instructions: "export PYTHONPATH=code/263259/HH_project/:code/263259/HH_project/single_cell_models/:$PYTHONPATH; pip install matplotlib; sed -i 's/Gi_inh])/Gi_inh], allow_pickle=True)/' code/263259/HH_project/network_simulations/ntwk_sim_demo.py; sed -i 's/Hz])/Hz], allow_pickle=True)/' code/263259/HH_project/network_simulations/ntwk_sim_demo.py;"
+
+instruction: "python3 code/263259/HH_project/network_simulations/ntwk_sim_demo.py --CONFIG 'HH_RS--HH_FS--CONFIG1' --tstop 5000 -f code/263259/HH_project/network_simulations/data/example.npy"
+
+model_instance_id: "fa393b61-92ab-4925-ad53-d36cde34c5d6"
+
+hbp_user: ""
+
+hbp_password: ""
+
+machine_config: JUSUF-config.json
